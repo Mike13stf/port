@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+.text-secondary{
+  color: lime;
+}
+
+.btn-md{
+  display: inline-block;
+  background: #FEC544;
+  color: #08080A;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 8px 36px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border: 2px solid #FEC544;
+  transition: all 0.3s ease;
+}
+.btn-md:hover{
+  color: #FEC544;
+  background: none;
+}
+
+.showcase{
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    height: 100vh;
+
+    
+}
+.navbar.sticky{
+  padding: 10px 100px;
+  background: #07080B;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    color: #fec544;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    perspective: 500px;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+  }
+  
+  nav ul li a.active {
+    transform: rotateX(30deg) translateY(-5px);
+  }
+  
+  nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform-origin: top center;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  nav ul li a.active::before {
+    transform: scaleX(1);
+  }
+  .navbar ul li span{
+    color: lime;
+    border-left: 1px solid wheat;
+    padding-left: 25px;
+    padding-right: 5px;
+    text-align: center;
+  }
+
+  .showcase-text{
+    max-width: 800px;
+    padding-top: 250px;
+    padding-left: 120px;
+    color: #fff;
+}
+ .showcase-text .text-1{
+    font-size: 27px;
+}
+.showcase-text .text-2{
+    font-size: 50px;
+    font-weight: 700;
+}
+.showcase-text .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: 700;
+}
+.showcase-text .text-3 span{
+    color: #FEC544;
+}
+
+#services{
+  color: #A9ADB8;
+  background: linear-gradient(to bottom, #041b1f , #010005 );
+}
+.services h5{
+  font-weight: 700;
+  color: #07080B;
+  transform: translateY(-65px);
+}
+.services h1{
+  color: #07080B;
+  text-align: center;
+  font-size: 80px;
+  transform: translateY(23px);
+  opacity: 0.1;
+  padding-top: -20px;
+}
+.services .service-content .main{
+  width: calc(30% - 20px);
+  min-height: 450px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.service{
+  background: #07080B;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px -15px #07080B;
+  transition: transform 0.8s;
+}
+.service-logo{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  background: #07080B;
+  border: 18px solid #FEC544;
+  transform: transform 1s;
+}
+.service-logo i{
+  color: #FEC544;
+  width: 50px;
+  margin-top: 20px;
+}
+.service h4{
+  height: 28px;
+  width: 80%;
+  background: #07080B;
+  margin: 60px auto;
+  position: relative;
+}
+.service h4::after{
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, #07080B , #FEC544 );
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: -1;
+}
+.service h4::before{
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, #FEC544 , #07080B);
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+.shadowone{
+  height: 200px;
+  width: 80%;
+  background: #07080B;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 10%;
+  z-index: -1;
+  box-shadow: 0 0 20px -15px #07080B;
+  transition: transform 0.8s;
+}
+.shadowtwo{
+  height: 200px;
+  width: 64%;
+  background: #07080B;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 18%;
+  z-index: -2;
+}
+.main:hover .service{
+  transform: translateY(-50px);
+}
+.main:hover .shadowone{
+  transform: translateY(-25px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
